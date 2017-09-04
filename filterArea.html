@@ -1,0 +1,300 @@
+
+<div class="region">
+	<div class="content">
+			<button class="button" id="showadvanced" onClick="toggleHWT()" >Toggle Advanced Filtering/Selling</button>
+
+	</div>
+</div>
+<div class="region hwtextra" >
+	<div class="content" id="topArea">
+		<h2 class="text--larger category-name">Advanced Filter</h2>
+		<hr>
+			<p class="text--smallest">Select Options to Filter On</p>
+			<div class="grid">
+				<div  class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Name Contains</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="req-name" name="req-name" value="">
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div  class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Category</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6" id="cat1row">
+				</div>
+				<div class="row row-6" id="cat2row">
+				</div>
+				<div class="row row-6" id="cat3row">
+				</div>
+				<div  class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Rarity</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="rarity-common" name="rarity-common" type="checkbox" value="">
+									<label for="rarity-common">Common</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="rarity-uncommon" name="rarity-uncommon" type="checkbox" value="">
+									<label for="rarity-uncommon">Uncommon</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="rarity-rare" name="rarity-rare" type="checkbox" value="">
+									<label for="rarity-rare">Rare</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="row row-6">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="rarity-ultrarare" name="rarity-ultrarare" type="checkbox" value=""  >
+									<label for="rarity-ultrarare">Ultra Rare</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+
+							<ul class="input-group-vert" >
+								<li>
+									<input id="rarity-legendary" name="rarity-legendary" type="checkbox" value="">
+									<label for="rarity-legendary">Legendary</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div  class="row row-6 energylevelarea">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Req Energy Level</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6 energylevelarea">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Lower <input  id="energy-min" type="number" value="0"/>
+						</div>
+					</div>
+
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Upper	<input  id="energy-max" type="number" value="9"/>
+						</div>
+					</div>
+
+				</div>
+				<div  class="row row-6 sellable">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Price</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6 sellable">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Lower <input  id="price-min" type="number" value="0"/>
+						</div>
+					</div>
+
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Upper	<input  id="price-max" type="number" value="1000"/>
+						</div>
+					</div>
+
+				</div>
+				<div  class="row row-6 sellable">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Unused Amount</label>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="row row-6 sellable">
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Lower <input  id="unused-min" type="number" value="0"/>
+						</div>
+					</div>
+
+					<div class="col req-col">
+						<div class="input-field" data-type="normal">
+							Upper	<input  id="unused-max" type="number" value="1000"/>
+						</div>
+					</div>
+
+				</div>
+				<div class="row row-6">
+					<div class="col req-col">
+
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Have Owned</label>
+							</header>
+							<ul class="input-group-vert" >
+								<li>
+									<input id="owned" name="owned" type="checkbox" value="">
+									<label for="owned">Yes</label>
+
+								</li>
+								<li>
+									<input id="notowned" name="notowned" type="checkbox" value="" >
+									<label for="notowned">No</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="col req-col ">
+						<div class="input-field" data-type="normal">
+							<header>
+								<label >Wearable</label>
+							</header>
+							<ul class="input-group-vert" >
+								<li>
+									<input id="wearable" name="wearable" type="checkbox" value="">
+									<label for="wearable">Yes</label>
+								</li>
+								<li>
+									<input id="notwearable" name="notwearable" type="checkbox" value="" >
+									<label for="notwearable" >No</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col req-col sellable">
+
+
+						<div class="input-field sellable" data-type="normal">
+							<header>
+								<label >Has Certification</label>
+							</header>
+							<ul class="input-group-vert" >
+								<li>
+									<input id="certified" name="certified" type="checkbox" value="">
+									<label for="certified">Yes</label>
+
+								</li>
+								<li>
+									<input id="notcertified" name="notcertified" type="checkbox" value="" >
+									<label for="notcertified">No</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div  class="row row-6">
+					<div class="col req-col" style="margin-top:10px;">
+						<button class="button" id="applyfilter" onClick="applyFilterFunc()"  >Apply Filter</button>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<div class="region hwtextra sellable"  >
+	<div class="content">
+		<h2 class="text--larger category-name">Mass Sell</h2>
+		<hr>
+			<p class="text--smallest">Sell filtered reqs all at once </p>
+			<div class="grid">
+				<div  class="row row-6">
+					<div class="col req-col">
+						<select data-val="true" id="sellChoice">
+						<option selected="selected" value="keep">Keep</option>
+						<option value="sell">Sell</option>
+
+						</select>
+					</div>
+					<div class="col req-col">
+						<div class="input-field" data-type="normal" >
+						 <input  id="keeporsell" type="number" value="10"/>
+						</div>
+					</div>
+					<div class="col req-col">
+						<button class="button" id="sellall" onClick="confirmSellAll()">Go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="region hwtextra">
+		<div class="content" id="allreqscontent">
+				<div class="req-category">
+              <div class="reqs-row show always-show">
+								<div class="grid" id="allReqs">
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+	</div >

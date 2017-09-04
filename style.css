@@ -1,0 +1,3 @@
+body.has-popup { overflow: auto !important; height: initial !important; }
+.popup-container { position: fixed !important; }
+.popup-container.open { overflow: auto !important; }

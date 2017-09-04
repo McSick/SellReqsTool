@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "css": [ "style.css" ],
+      "js": [ "contentscript.js" ],
+      "matches": [ "https://www.halowaypoint.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Provides tools to help make your halo waypoint experience better.",
+   "manifest_version": 2,
+   "name": "Sell Reqs Tool",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.0",
+   "web_accessible_resources": [ "sellReqs.js" ]
+}
